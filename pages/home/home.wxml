@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text class="title">Hello World</text>
+<button size="mini">点击一下</button>
+<image src=""></image>
