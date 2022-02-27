@@ -2,3 +2,5 @@
 <text class="title">Hello World</text>
 <button size="mini">点击一下</button>
 <image src=""></image>
+
+<view>2.知识点2</view>
