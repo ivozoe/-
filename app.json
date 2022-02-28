@@ -3,5 +3,30 @@
         "pages/home/home",
         "pages/about/about"
     ],
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "window": {
+        "navigationBarBackgroundColor": "#ff5777",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "我的微信小程序",
+        "backgroundColor": "#ff5111",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "selectedColor": "#ff5777",
+        "list": [
+        {
+            "pagePath": "pages/home/home",
+            "text": "首页",
+            "iconPath": "assets/tabbar/home.png",
+            "selectedIconPath": "assets/tabbar/home_active.png"
+        },
+        {
+            "pagePath": "pages/about/about",
+            "text": "分类",
+            "iconPath": "assets/tabbar/category.png",
+            "selectedIconPath": "assets/tabbar/category_active.png"
+        }
+    ]
+    }
 }
