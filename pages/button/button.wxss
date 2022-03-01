@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.btnclick{
+    background:pink;
+    color: white
+}

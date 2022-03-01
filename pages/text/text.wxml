@@ -1,0 +1,22 @@
+<!--pages/text/text.wxml-->
+<!-- text组件 -->
+<!-- ------1.selectable属性------- -->
+<text>哈哈哈不可选中\n</text>
+<text selectable="{{true}}">呵呵呵可以选中\n</text>
+<!-- 简写 -->
+<text selectable>呵呵呵可以选中\n</text>
+
+<!-- ------2.space属性------- -->
+<!-- ensp半个中文字符大小 -->
+<!-- emsp一个中文字符大小 -->
+<text>Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+
+<!-- ------3.decode属性------- -->
+<text>5 &gt; 3\n</text>
+<text decode="{{true}}">5 &gt; 3\n</text>
+<!-- 简写 -->
+<text decode>5 &gt; 3\n</text>
+
