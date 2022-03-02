@@ -1,0 +1,23 @@
+<!-- value输入框初始值 -->
+<input value="哈哈哈"/>
+
+<!-- type的值决定弹出键盘的类型 -->
+<input type="idcard"/>
+
+<!-- password暗文 -->
+<input password/>
+
+<!-- placeholder输入框为空时的内容 -->
+<input placeholder="请输入内容"/>
+
+<!-- 键盘右下角的按钮的文字：发送、前往等 -->
+<input confirm-type="go"/>
+
+<!-- input绑定事件：用户输入时、获取焦点时、失去焦点时 -->
+<input bindinput="inputevent"
+       bindfocus="focusevent"
+       bindblur="blurevent"/>
+
+
+
+

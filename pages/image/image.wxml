@@ -1,0 +1,27 @@
+<!--pages/image/image.wxml-->
+<!-- image组件 
+    重点：1.是行内块元素
+         2.可以写单标签也可以写双标签-->
+<!-- <image/> -->
+<image src="../../assets/DSC_0511.JPG"
+        mode="aspectFill"/>
+<!-- 1.src属性 : 本地路径 / 远程地址-->
+<image src="../../assets/DSC_0511.JPG"/>
+<image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1113%2F092919113248%2F1Z929113248-8-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648709367&t=186baef31eacb2fc4ba7be84c9e3a975"/>
+
+<!-- 2.src补充：选择相册 -->
+<button bindtap="choosepic">选择相册</button>
+<image src="{{imagePath}}"/>
+
+<!-- 3.bindload监听图片加载完成 -->
+<!--   lazy-load图片懒加载 -->
+<image 
+    wx:for="{{1}}"
+    src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1113%2F092919113248%2F1Z929113248-8-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648709367&t=186baef31eacb2fc4ba7be84c9e3a975"
+    bindload="imageload"
+    lazy-load/>
+
+<!-- 4.show-menu-by-longpress长按图片出现识别小程序码 -->
+<image 
+    show-menu-by-longpress
+    src="../../assets/DSC_0511.JPG"></image>

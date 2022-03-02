@@ -1,0 +1,64 @@
+/* pages/view/view.wxss */
+.view1{
+    background-color: red;
+}
+
+.view2{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+}
+.hover-view2{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+
+.view3{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    margin-top: 20px;
+}
+.hover-view3{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.view4{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    margin-top: 20px;
+}
+.hover-view4{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+
+.view5{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+}
+.hover-view5{
+    background-color: pink;
+    font-size: 30px;
+}
+
+.view6{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    margin-top: 20px;
+}
+.hover-view6{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    font-size: 30px;
+}

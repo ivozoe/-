@@ -1,0 +1,32 @@
+<!--pages/view/view.wxml-->
+<!-- view组件 -->
+<!-- ----------1.hover-class属性：用户按下组件时的点击态---------- -->
+<view class="view1">哈哈哈</view>
+<view>呵呵呵</view>
+<view class="view2" hover-class="hover-view2">view2</view>
+
+<!-- ----------2.hover-stay-time属性: 松开后点击态停留时间---------- -->
+<view 
+    class="view3" 
+    hover-class="hover-view3" 
+    hover-stay-time='0'>
+    view3
+</view>
+
+<!-- ----------3.hover-stay-time属性: 按下后多久出现点击态---------- -->
+<view 
+    class="view4" 
+    hover-class="hover-view4" 
+    hover-start-time="500">
+    view4
+</view>
+
+<!-- 4.hover-stop-propagation属性: 是否阻止本节点的祖先节点出现点击态 -->
+<view class="view6" hover-class="hover-view6">
+    <view 
+        class="view5" 
+        hover-class="hover-view5" 
+        hover-stop-propagation>
+        view5
+    </view>
+</view>
