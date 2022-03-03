@@ -1,0 +1,18 @@
+
+    var message = "ivozoe"
+    var sum = function(num1,num2){
+        return num1 + num2
+    }
+    var age = 22
+
+    var price = function(price,num){
+        var num = num || 2
+        return price.toFixed(num)
+    }
+    // 必须要对变量做一个导出
+    module.exports = {
+        message:message,
+        sum:sum,
+        age:age,
+        price:price
+    }

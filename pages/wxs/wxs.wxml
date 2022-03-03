@@ -1,0 +1,26 @@
+<!-- 1.在wxml文件写wxs代码 -->
+<!-- <wxs module="info">
+    var message = "ivozoe"
+    var sum = function(num1,num2){
+        return num1 + num2
+    }
+    var age = 22
+    // 必须要对变量做一个导出
+    module.exports = {
+        message:message,
+        sum:sum,
+        age:age
+    } -->
+<!-- </wxs> -->
+<view>{{info.message}}</view>
+<view>{{info.age}}</view>
+<view>{{info.sum(10,20)}}</view>
+
+<!-- 2.在文件内导出 -->
+<wxs src="./info.wxs" module="info"/>
+<view>{{info.message}}</view>
+<view>{{info.age}}</view>
+<view>{{info.sum(10,20)}}</view>
+
+<!-- 3.wxs的应用 -->
+<view>{{info.price(price,6)}}</view>

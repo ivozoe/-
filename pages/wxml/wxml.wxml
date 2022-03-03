@@ -1,0 +1,48 @@
+<!-- 1. mustache直接显示数据 -->
+<view>{{message}}</view>
+<view>{{firstname}} {{lastname}}</view>
+<view>{{firstname + ' ' + lastname}}</view>
+<view>{{firstname}}-{{lastname}}</view>
+<view>{{age >= 18 ? "成年人" : "未成年人"}}</view>
+
+<!-- 2.mustache绑定属性 -->
+<view>{{time}}</view>
+
+<button size="mini" bindtap="changecolor">切换颜色</button>
+<view class="view1 {{isActive ? 'active' : ''}}">哈哈哈</view>
+
+<view>-------------条件判断-----------</view>
+<view wx:if="{{isshow}}">哈哈哈</view>
+<button size="mini" bindtap="changescore">成绩+5</button>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 70}}">中等</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<view>----------列表渲染(有不加key警告)-------------</view>
+<view wx:for="{{movies}}">{{item}} {{index}}</view>
+
+
+<view>----------block标签(有不加key警告)-------------</view>
+<block>
+    <view wx:for="{{movies}}">{{item}} {{index}}</view>
+</block>
+
+<view>----------index/item取其他名字(有不加key警告)-------------</view>
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}} {{i}}</view>
+
+<view>----------key的作用-------------</view>
+<view wx:for="{{movies}}" wx:key="item">{{item}} {{index}}</view>
+
+
+<view>-------------template-------------</view>
+<template name="contentItem">
+    <button size='mini'>{{btn}}</button>
+    <view>{{text}}</view>
+</template>
+
+<template is="contentItem"/>
+<template is="contentItem" data="{{btn: '按钮',text: '呵呵呵'}}"/>
+<template is="contentItem" data="{{btn: '锁定',text: '嘿嘿嘿'}}"/>
+<template is="contentItem" data="{{btn: '提交',text: '哈哈哈'}}"/>

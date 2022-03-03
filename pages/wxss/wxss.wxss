@@ -1,0 +1,19 @@
+/* pages/wxss/wxss.wxss */
+@import "./style/box.wxss";
+@import "./style/search.wxss";
+.hangnei{
+    font-size: 30px;
+}
+
+/* .box1{
+    height: 100px;
+    width: 100px;
+    background: purple;
+    font-size: 20px;
+}
+.box2{
+    font-size: 40rpx;
+    height: 200rpx;
+    width: 200rpx;
+    background:red;
+} */
