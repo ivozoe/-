@@ -3,3 +3,31 @@
     color: pink;
     font-size: 26px;
 }
+.view1{
+    width: 500rpx;
+    height: 500rpx;
+    background: orange;
+}
+.content{
+    height: 100rpx;
+    background: #cf5dcf;
+    display: flex;
+}
+.item{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    line-height: 100rpx;
+    border: 1rpx solid white;
+    color: white;
+}
+.view2{
+    width: 400rpx;
+    height: 400rpx;
+    background: rgb(28, 45, 202);
+}
+.view3{
+    width: 300rpx;
+    height: 300rpx;
+    background: rgb(175, 15, 162);
+}

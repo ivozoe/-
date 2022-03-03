@@ -1,66 +1,52 @@
 // pages/home/home.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        titles: ['新品',"精选","热卖"]
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
+    btnclick(){
+        console.log('btnclick');
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
+    touchstart(){
+        console.log('touchstart');
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
+    touchmove(){
+        console.log('touchmove');
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
+    touchend(){
+        console.log('touchend');
     },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
+    tap(){
+        console.log('tap');
     },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
+    longpress(){
+        console.log('longpress');
     },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
+    btntouchevent(event){
+        console.log("---------",event);
     },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
+    itemclick(event){
+        console.log(event);
+        const dataset = event.currentTarget.dataset
+        const index = dataset.index
+        const item = dataset.item
+        console.log(index,item);
+    },
+    captureview1(){
+        console.log('captureview1');
+    },
+    bindview1(){
+        console.log('bindview1');
+    },
+    captureview2(){
+        console.log('captureview2');
+    },
+    bindview2(){
+        console.log('bindview2');
+    },
+    captureview3(){
+        console.log('captureview3');
+    },
+    bindview3(){
+        console.log('bindview3');
     }
 })
