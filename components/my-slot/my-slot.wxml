@@ -1,0 +1,5 @@
+<!--components/my-slot/my-slot.wxml-->
+<!-- 1.单个插槽的使用 -->
+<view>我是my-slot的标题</view>
+<slot/>
+<view>我是my-slot的内容哈哈哈哈</view>

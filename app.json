@@ -3,5 +3,8 @@
         "pages/home/home",
         "pages/about/about"
     ],
+    "usingComponents": {
+        "cpn1":"/components/cpn1/cpn1"
+    },
     "sitemapLocation": "sitemap.json"
 }

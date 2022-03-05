@@ -1,66 +1,21 @@
 // pages/home/home.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        counter: 0,
+        titles: ['衣服','裤子','鞋子']
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
+    homeadd(){
+        this.setData({
+            counter: this.data.counter + 1
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
+    homeclick(event){
+        // console.log(event);
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
+    btnclick(){
+        //拿到组件
+        const my_sel = this.selectComponent("#sel-class")
+        console.log(my_sel);
+        my_sel.addnum(20)
     }
 })

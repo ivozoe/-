@@ -1,4 +1,42 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">点击一下</button>
-<image src=""></image>
+
+<!-- 1.定义自定义组件 -->
+<my-cpn></my-cpn>
+<my-cpn/>
+
+<!-- 2.向组件传值/传样式 -->
+<my-prop title="哈哈哈" titleclass="red"></my-prop>
+<my-prop title="嘿嘿嘿" titleclass="blue"></my-prop>
+<my-prop title="呵呵呵" titleclass="green"></my-prop>
+
+<!-- 3.组件向外传值 -->
+<view>{{counter}}</view>
+<my-event bind:add="homeadd"></my-event>
+
+<!-- 4.组件练习 -->
+<w-tab-control titles="{{titles}}"
+               bind:homeclick="homeclick"
+               ></w-tab-control>
+
+<!-- 5.页面直接调用组件修改组件的数据 -->
+<button size="mini" bindtap="btnclick">修改组件的值</button>
+<my-sel id="sel-class"></my-sel>
+
+<view>-------------------------</view>
+<!-- 6.1.单个插槽的使用 -->
+<my-slot>
+    <button size="mini">按钮</button>
+</my-slot>
+<my-slot>
+    <slider></slider>
+</my-slot>
+<my-slot>
+    <image src="//inews.gtimg.com/newsapp_ls/0/14587344166_640330/0"></image>
+</my-slot>
+
+<!-- 6.1.多个插槽的使用 -->
+<my-mslot>
+    <button size="mini" slot="slot2">我是mslot的按钮</button>
+</my-mslot>

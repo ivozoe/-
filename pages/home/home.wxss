@@ -3,3 +3,13 @@
     color: pink;
     font-size: 26px;
 }
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}

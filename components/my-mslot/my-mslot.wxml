@@ -1,0 +1,6 @@
+<!--components/my-mslot/my-mslot.wxml-->
+<view>我是my-mslot的标题</view>
+    <view class="slot1"><slot name="slot1"></slot></view>
+    <view class="slot1"><slot name="slot2"></slot></view>
+    <view class="slot1"><slot name="slot3"></slot></view>
+<view>我是my-mslot的内容哈哈哈哈</view>
