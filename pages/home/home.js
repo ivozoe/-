@@ -1,66 +1,75 @@
 // pages/home/home.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
-    data: {
-
+    showToast(){
+        wx.showToast({
+          title: '你好啊',
+          duration:3000,
+          icon: 'loading',
+          mask: true,
+          success: function(res){
+            console.log(res);
+          },
+          fail: function(err){
+            console.log(err);
+          }
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
+    showModal(){
+        wx.showModal({
+          title:'我是标题',
+          content:'我是内容哈哈哈',
+          cancelText: "退出",
+        //   showCancel: false,
+          cancelColor: "red",
+        //   editable: true,
+        //   placeholderText: "请输入..."
+        success: function(res){
+            console.log(res);
+            if(res.cancel){
+                console.log('用户点击了取消按钮');
+            }
+            if(res.confirm){
+                console.log('用户点击了确定按钮');
+                
+            }
+        }
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
+    showLoading(){
+        wx.showLoading({
+          title: '加载中...',
+          mask: true
+        })
+        // showLoading没有时间限制，需要手动结束
+        setTimeout(() => {
+            wx.hideLoading()
+        },2000)
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
+    showActionSheet(){
+        wx.showActionSheet({
+          itemList: ['相册',"拍照"],
+          itemColor: 'pink',
+          success: function(res){
+              console.log(res);
+              switch(res.tapIndex){
+                  case 0: 
+                  console.log('相册');
+                  break;
+                  case 1:
+                  console.log('拍照');
+                  break;
+              }
+          }
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
     /**
      * 用户点击右上角分享
      */
     onShareAppMessage: function () {
-
+      return {
+        title: '你好啊ivozoe',
+        path: '/pages/about/about.js',
+        imageUrl: 'http://s3.mogucdn.com/mlcdn/c45406/170915_0a93207ci28kelh617k4hh62l65lb_640x960.jpg'
+      }
     }
 })
