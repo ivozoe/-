@@ -2,3 +2,30 @@
 <text class="title">Hello World</text>
 <button size="mini">点击一下</button>
 <image src=""></image>
+<!-- 1.navigator页面跳转 -->
+<navigator url="/pages/detial/detial">跳到详情页</navigator>
+
+<!-- 2.navigator得属性：open-type -->
+<navigator url="/pages/detial/detial"
+           open-type="redirect">
+           跳到详情页(redirect)
+</navigator>
+
+<!-- 3.navigator得属性：open-type -->
+<navigator url="/pages/about/about"
+           open-type="switchTab">
+           跳到关于页(switchTab)
+</navigator>
+
+<!-- 4.navigator得属性：open-type -->
+<navigator url="/pages/detial/detial"
+           open-type="reLaunch">
+           跳到详情页(reLaunch)
+</navigator>
+
+<view>----------5.数据传递-----------</view>
+<navigator url="/pages/detial/detial?name=ivozoe&age=22&hright=1.88">跳转到详情页</navigator>
+<view>{{title}}</view>
+
+<!-- 6.通过代码跳转 -->
+<button size="mini" bind:tap="pushdetail">跳到详情页</button>
